@@ -1,0 +1,89 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+}
+
+.top-link-wrapper {
+  background-color: orange;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 0 10px 100px;
+  margin: 0 0 10px 0;
+}
+
+.button {
+  border: 1px black solid;
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: rgb(255, 187, 60);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.h1-name {
+  text-align: center;
+}
+
+.h2-name {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+.eat-menu-set {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.photo {
+  width: 450px;
+  margin-bottom: 10px;
+}
+
+.eat-set {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  border: 10px orange solid;
+}
+
+.menu {
+  margin: 0 0 10px 0;
+  padding: 0 10%;
+  background-color: black;
+  text-align: center;
+  position: sticky !important;
+  font-size: 30px;
+}
+
+.menu-element {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu-element:hover {
+  background-color: orange;
+}
+
+footer {
+  background-color: orange;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 0 10px 100px;
+  margin: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <title>Good Food</title>
+  </head>
+  <body>
+    <!-- Верхняя ссылка -->
+    <div class="top-link-wrapper">
+      Сайт ВКонтакте:
+      <a href="https://vk.com/egrsafronov" class="button">Перейти на сайт</a>
+    </div>
+    <!-- Телефон, логотип, вход -->
+    <div></div>
+    <!-- Навигационное меню -->
+    <div class="menu">
+      <a class="menu-element" href="./new.html">Новинки</a
+      ><a class="menu-element" href="./sets.html">Сеты</a
+      ><a class="menu-element" href="./classic.html">Классические роллы</a
+      ><a class="menu-element" href="./hot.html">Горячие роллы</a>
+      <a class="menu-element" href="./salad.html">Салаты</a>
+      <a class="menu-element" href="./drink.html">Напитки</a>
+    </div>
+    <!-- Слайдер -->
+    <div class="slider">
+      <div class="slider__wrapper">
+        <div class="slider__items">
+          <div class="slider__item">
+            <img class="img-fluid" src="./img/slider1.jpg" alt="c1" />
+          </div>
+          <div class="slider__item">
+            <img class="img-fluid" src="./img/slider2.jpg" alt="c2" />
+          </div>
+          <div class="slider__item">
+            <img class="img-fluid" src="./img/slider3.jpg" alt="c3" />
+          </div>
+          <div class="slider__item">
+            <img class="img-fluid" src="./img/slider4.jpg" alt="c4" />
+          </div>
+        </div>
+      </div>
+      <a
+        class="slider__control slider__control_prev"
+        href="#"
+        role="button"
+      ></a>
+      <a
+        class="slider__control slider__control_next"
+        href="#"
+        role="button"
+      ></a>
+    </div>
+    <!-- Меню -->
+    <h2 class="h2-name">Сеты</h2>
+    <div class="eat-menu-set" id="sets"></div>
+    <h2 class="h2-name">Классические роллы</h2>
+    <div class="eat-menu-set" id="classic"></div>
+    <h2 class="h2-name">Горячие роллы</h2>
+    <div class="eat-menu-set" id="hot"></div>
+    <h2 class="h2-name">Салаты</h2>
+    <div class="eat-menu-set" id="salad"></div>
+    <h2 class="h2-name">Напитки</h2>
+    <div class="eat-menu-set" id="drink"></div>
+    <!-- Нижняя штука -->
+    <footer>
+      <a href="https://vk.com/egrsafronov" class="button"
+        >Политика конфиденциальности</a
+      >
+      Мы принимаем:
+      <img src="./img/oplata3.jpg" />
+    </footer>
+    <script src="slider.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
