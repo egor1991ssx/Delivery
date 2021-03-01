@@ -16,7 +16,8 @@ function renderProducts(container, products) {
             <div>${product.name}</div>
             <div>${product.description}</div>
             <div>${product.price}₽</div>
-            <a class="button-js">Заказать</a>
+            <button onclick="window.open('https://vk.com/egrsafronov')" class="order-btn">Заказать</button>
+
           </div>`;
     container.appendChild(productElement);
   });
@@ -159,3 +160,5 @@ $(function(){
     });
  
 });
+
+

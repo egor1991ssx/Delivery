@@ -61,9 +61,7 @@ body {
   color: white;
 }
 
-
-
-.button-js {
+.order-btn {
   border: 1px black solid;
   display: inline-block;
   padding: 10px;
@@ -75,9 +73,12 @@ body {
   -ms-transition: All 0.5s ease;
   transition: All 0.5s ease;
   color: white;
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20pt;
 }
 
-.button-js:hover {
+.order-btn:hover {
   background-color: orange;
   color: black;
 }
@@ -112,7 +113,7 @@ a {
  width: 100px;
  height: 100px;
  color: white;
- background-image: url('./img/icon.jpg');
+ background-image: url('../img/icon.jpg');
  background-size: contain;
  -webkit-transition: All 0.5s ease;
   -moz-transition: All 0.5s ease;
@@ -122,7 +123,7 @@ a {
 }
 
 .chips-menu-element:hover .icon{
-  background-image: url('./img/icon-orange.jpg');
+  background-image: url('../img/icon-orange.jpg');
   -webkit-transition: All 0.5s ease;
   -moz-transition: All 0.5s ease;
   -o-transition: All 0.5s ease;
