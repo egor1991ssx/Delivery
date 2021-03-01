@@ -22,9 +22,10 @@ function renderProducts(container, products) {
   });
 }
 
-
-
 let news = [
+  new Product("Сет1", "Афигенный сет", "set1.jpg", 1200),
+  new Product("Сет1", "Афигенный сет", "set1.jpg", 1200),
+  new Product("Сет1", "Афигенный сет", "set1.jpg", 1200),
   new Product("Сет1", "Афигенный сет", "set1.jpg", 1200),
   new Product("Сет2", "Вкусный сет", "set2.jpg", 1300),
   new Product("Сет3", "Классный сет", "set3.jpg", 1400),
@@ -37,6 +38,9 @@ let sets = [
   new Product("Сет1", "Афигенный сет", "set1.jpg", 1200),
   new Product("Сет2", "Вкусный сет", "set2.jpg", 1300),
   new Product("Сет3", "Классный сет", "set3.jpg", 1400),
+  new Product("Сет1", "Афигенный сет", "set1.jpg", 1200),
+  new Product("Сет2", "Вкусный сет", "set2.jpg", 1300),
+  new Product("Сет3", "Классный сет", "set3.jpg", 1400),
 ];
 let setsElement = document.getElementById("sets");
 
@@ -44,11 +48,11 @@ renderProducts(setsElement, sets);
 
 let classic = [
   new Product("Ролл1", "Афигенный сет", "set1.jpg", 400),
-  new Product("Ролл1", "Афигенный сет", "set1.jpg", 400),
-  new Product("Ролл1", "Афигенный сет", "set1.jpg", 400),
-  new Product("Ролл1", "Афигенный сет", "set1.jpg", 400),
   new Product("Ролл2", "Вкусный сет", "set2.jpg", 500),
   new Product("Ролл3", "Классный сет", "set3.jpg", 600),
+  new Product("Сет1", "Афигенный сет", "set1.jpg", 1200),
+  new Product("Сет2", "Вкусный сет", "set2.jpg", 1300),
+  new Product("Сет3", "Классный сет", "set3.jpg", 1400),
 ];
 let classicElement = document.getElementById("classic");
 
@@ -58,12 +62,18 @@ let hot = [
   new Product("Ролл1", "Афигенный сет", "set1.jpg", 400),
   new Product("Ролл2", "Вкусный сет", "set2.jpg", 500),
   new Product("Ролл3", "Классный сет", "set3.jpg", 600),
+  new Product("Сет1", "Афигенный сет", "set1.jpg", 1200),
+  new Product("Сет2", "Вкусный сет", "set2.jpg", 1300),
+  new Product("Сет3", "Классный сет", "set3.jpg", 1400),
 ];
 let hotElement = document.getElementById("hot");
 
 renderProducts(hotElement, hot);
 
 let baked = [
+  new Product("Сет1", "Афигенный сет", "set1.jpg", 1200),
+  new Product("Сет2", "Вкусный сет", "set2.jpg", 1300),
+  new Product("Сет3", "Классный сет", "set3.jpg", 1400),
   new Product("Сет1", "Афигенный сет", "set1.jpg", 1200),
   new Product("Сет2", "Вкусный сет", "set2.jpg", 1300),
   new Product("Сет3", "Классный сет", "set3.jpg", 1400),
@@ -76,6 +86,9 @@ let sushi = [
   new Product("Ролл1", "Афигенный сет", "set1.jpg", 400),
   new Product("Ролл2", "Вкусный сет", "set2.jpg", 500),
   new Product("Ролл3", "Классный сет", "set3.jpg", 600),
+  new Product("Сет1", "Афигенный сет", "set1.jpg", 1200),
+  new Product("Сет2", "Вкусный сет", "set2.jpg", 1300),
+  new Product("Сет3", "Классный сет", "set3.jpg", 1400),
 ];
 let sushiElement = document.getElementById("sushi");
 
@@ -86,6 +99,9 @@ let wok = [
   new Product("Ролл1", "Афигенный сет", "set1.jpg", 400),
   new Product("Ролл2", "Вкусный сет", "set2.jpg", 500),
   new Product("Ролл3", "Классный сет", "set3.jpg", 600),
+  new Product("Сет1", "Афигенный сет", "set1.jpg", 1200),
+  new Product("Сет2", "Вкусный сет", "set2.jpg", 1300),
+  new Product("Сет3", "Классный сет", "set3.jpg", 1400),
 ];
 let wokElement = document.getElementById("wok");
 
@@ -95,6 +111,9 @@ let salad = [
   new Product("Ролл1", "Афигенный сет", "set1.jpg", 400),
   new Product("Ролл2", "Вкусный сет", "set2.jpg", 500),
   new Product("Ролл3", "Классный сет", "set3.jpg", 600),
+  new Product("Сет1", "Афигенный сет", "set1.jpg", 1200),
+  new Product("Сет2", "Вкусный сет", "set2.jpg", 1300),
+  new Product("Сет3", "Классный сет", "set3.jpg", 1400),
 ];
 let saladElement = document.getElementById("salad");
 
@@ -104,6 +123,9 @@ let drink = [
   new Product("Ролл1", "Афигенный сет", "set1.jpg", 400),
   new Product("Ролл2", "Вкусный сет", "set2.jpg", 500),
   new Product("Ролл3", "Классный сет", "set3.jpg", 600),
+  new Product("Сет1", "Афигенный сет", "set1.jpg", 1200),
+  new Product("Сет2", "Вкусный сет", "set2.jpg", 1300),
+  new Product("Сет3", "Классный сет", "set3.jpg", 1400),
 ];
 let drinkElement = document.getElementById("drink");
 
@@ -136,8 +158,4 @@ $(function(){
         }
     });
  
-});
-
-window.addEventListener('scroll', function() {
-  document.getElementById('showScroll').innerHTML = pageYOffset + '30px';
 });

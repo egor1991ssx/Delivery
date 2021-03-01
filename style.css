@@ -16,8 +16,15 @@ body {
   background-color: orange;
   font-size: 20px;
   border-radius: 20px;
-  padding: 10px 0 10px 100px;
+  padding: 10px 100px 10px 50px;
   margin: 0 0 10px 0;
+  justify-content: space-between;
+  display: flex;
+}
+
+.top-link-registration {
+  align-items: center;
+  display: flex;
 }
 
 .button {
@@ -33,14 +40,34 @@ body {
 }
 
 .button:hover {
-  background-color: black;
+  background-color: rgb(38, 220, 233);
   color: white;
 }
+
+.button-registration {
+  border: 1px black solid;
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 5px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+.button-registration:hover {
+  background-color: green;
+  color: white;
+}
+
+
 
 .button-js {
   border: 1px black solid;
   display: inline-block;
-  padding: 5px 8px;
+  padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   -webkit-transition: All 0.5s ease;
   -moz-transition: All 0.5s ease;
@@ -73,11 +100,34 @@ a {
 .eat-menu-set {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .photo {
   width: 450px;
   margin-bottom: 10px;
+}
+
+.icon {
+ width: 100px;
+ height: 100px;
+ color: white;
+ background-image: url('./img/icon.jpg');
+ background-size: contain;
+ -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+.chips-menu-element:hover .icon{
+  background-image: url('./img/icon-orange.jpg');
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
 }
 
 .eat-set {
@@ -89,6 +139,19 @@ a {
   margin: 5px;
   border: 10px orange solid;
   border-radius: 10px;
+  background-color: black;
+}
+
+.eat-set:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+  z-index: 17;
 }
 
 #menu {
@@ -123,7 +186,7 @@ a {
 }
 
 .chips-wrapper {
-background-color: rgb(206, 144, 28);
+background-color: orange;
 border-radius: 20px;
 padding-bottom: 20px;
 padding-top: 20px;
@@ -162,8 +225,16 @@ footer {
   background-color: orange;
   font-size: 20px;
   border-radius: 20px;
-  padding: 10px 0 10px 100px;
-  margin: 10px 0 10px 0;
+  padding: 10px 50px 10px 50px;
+  margin: 50px 0 10px 0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
+
+.oplata-wrapper {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
