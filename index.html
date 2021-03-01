@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="slider.css" />
     <title>Good Food</title>
   </head>
-  <body>
+  <body class="body_hide">
     <!-- Верхняя ссылка -->
     <div class="top-link-wrapper">
       Сайт ВКонтакте:
@@ -16,13 +16,16 @@
     <!-- Телефон, логотип, вход -->
     <div></div>
     <!-- Навигационное меню -->
-    <div class="menu">
-      <a class="menu-element" href="./new.html">Новинки</a
-      ><a class="menu-element" href="./sets.html">Сеты</a
-      ><a class="menu-element" href="./classic.html">Классические роллы</a
-      ><a class="menu-element" href="./hot.html">Горячие роллы</a>
-      <a class="menu-element" href="./salad.html">Салаты</a>
-      <a class="menu-element" href="./drink.html">Напитки</a>
+    <div class="menu" id="menu">
+      <a class="menu-element" href="#news">Новинки</a>
+      <a class="menu-element" href="#sets">Сеты</a>
+      <a class="menu-element" href="#classic">Роллы</a>
+      <a class="menu-element" href="#hot">Горячие роллы</a>
+      <a class="menu-element" href="#baked">Запечённые роллы</a>
+      <a class="menu-element" href="#sushi">Суши</a>
+      <a class="menu-element" href="#wok">WOK</a>
+      <a class="menu-element" href="#salad">Салаты</a>
+      <a class="menu-element" href="#drink">Напитки</a>
     </div>
     <!-- Слайдер -->
     <div class="slider">
@@ -40,7 +43,7 @@
           <div class="slider__item">
             <img class="img-fluid" src="./img/slider4.jpg" alt="c4" />
           </div>
-        </div>
+        </div> 
       </div>
       <a
         class="slider__control slider__control_prev"
@@ -53,16 +56,53 @@
         role="button"
       ></a>
     </div>
+    <!-- Фишки -->
+    <div class="chips-wrapper">
+    <h2 class="h2-name">ЧТО ЕСТЬ У НАС И ЧЕГО НЕТ У ОСТАЛЬНЫХ:</h2>
+    <div class="chips">
+    <div class="chips-menu-element">
+    <h2>ЛИМИТИРОВАННОЕ МЕНЮ</h2>
+    Мы знаем о суши все, включая то, что обычно нравится людям, поэтому мы специально сократили меню, чтобы вам было проще
+    сделать выбор. Все, что вы выберете - вам понравится.
+    </div>
+
+    <div class="chips-menu-element">
+    <h2>ВКУС НАСТОЯЩИХ СУШИ</h2>
+    Изначально мы готовили для себя, потом для друзей. Сейчас, открыв свой сервис, нам по-прежнему важен вкус еды. Мы
+    тщательно разрабатывали наше меню, отобрали лучшие продукты, чтобы вы наконец-то попробовали настоящие суши.
+    </div>
+
+    <div class="chips-menu-element">
+    <h2>КАЧЕСТВО ИНГРЕДИЕНТОВ</h2>
+    Мы готовим суши и для себя в том числе, поэтому мы сотрудничаем с надежными поставщиками, тщательно следим за составом и
+    свежестью ингредиентов, чтобы всегда гарантировать качество еды, которую мы едим.
+    </div>
+
+    <div class="chips-menu-element">
+    <h2>Правильность</h2>
+    Еда должна быть не только вкусной, но и красивой. Поэтому мы уделяем большое внимание сервировке блюд, тому в каком виде
+    она попадет на ваш стол.
+    </div>
+    </div>
+    </div>
     <!-- Меню -->
-    <h2 class="h2-name">Сеты</h2>
+    <h2 class="h2-name" name="news">Новинки</h2>
+    <div class="eat-menu-set" id="news"></div>
+    <h2 class="h2-name" name="sets">Сеты</h2>
     <div class="eat-menu-set" id="sets"></div>
-    <h2 class="h2-name">Классические роллы</h2>
+    <h2 class="h2-name" name="classic">Роллы</h2>
     <div class="eat-menu-set" id="classic"></div>
-    <h2 class="h2-name">Горячие роллы</h2>
+    <h2 class="h2-name" name="hot">Горячие роллы</h2>
     <div class="eat-menu-set" id="hot"></div>
-    <h2 class="h2-name">Салаты</h2>
+    <h2 class="h2-name" name="hot">Запечённые роллы</h2>
+    <div class="eat-menu-set" id="baked"></div>
+    <h2 class="h2-name" name="sushu">Суши</h2>
+    <div class="eat-menu-set" id="sushi"></div>
+    <h2 class="h2-name" name="wok">WOK</h2>
+    <div class="eat-menu-set" id="wok"></div>
+    <h2 class="h2-name" name="salad">Салаты</h2>
     <div class="eat-menu-set" id="salad"></div>
-    <h2 class="h2-name">Напитки</h2>
+    <h2 class="h2-name" name="drink">Напитки</h2>
     <div class="eat-menu-set" id="drink"></div>
     <!-- Нижняя штука -->
     <footer>

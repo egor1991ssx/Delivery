@@ -3,6 +3,15 @@ body {
   background-color: black;
 }
 
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+
+.body_visible {
+	opacity: 1;
+}
+
 .top-link-wrapper {
   background-color: orange;
   font-size: 20px;
@@ -16,10 +25,34 @@ body {
   display: inline-block;
   padding: 5px 8px;
   border-radius: 5px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
 }
 
 .button:hover {
-  background-color: rgb(255, 187, 60);
+  background-color: black;
+  color: white;
+}
+
+.button-js {
+  border: 1px black solid;
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 5px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+  color: white;
+}
+
+.button-js:hover {
+  background-color: orange;
+  color: black;
 }
 
 a {
@@ -33,13 +66,13 @@ a {
 
 .h2-name {
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 50px;
 }
 
 .eat-menu-set {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .photo {
@@ -55,15 +88,20 @@ a {
   align-items: center;
   margin: 5px;
   border: 10px orange solid;
+  border-radius: 10px;
 }
 
-.menu {
+#menu {
   margin: 0 0 10px 0;
   padding: 0 10%;
   background-color: black;
   text-align: center;
-  position: sticky !important;
-  font-size: 30px;
+  position: sticky;
+  font-size: 25px;
+  top: 0px;
+  border: 5px orange solid;
+  border-radius: 10px;
+  z-index: 16;
 }
 
 .menu-element {
@@ -72,9 +110,51 @@ a {
   color: white;
   padding: 20px;
   border-radius: 10px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
 }
 
 .menu-element:hover {
+  background-color: orange;
+  color: black;
+}
+
+.chips-wrapper {
+background-color: rgb(206, 144, 28);
+border-radius: 20px;
+padding-bottom: 20px;
+padding-top: 20px;
+margin-top: 10px;
+}
+
+.chips {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.chips-menu-element {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  border: 10px rgb(0, 0, 0) solid;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+.chips-menu-element:hover {
+  color: rgb(0, 0, 0);
   background-color: orange;
 }
 
