@@ -113,7 +113,7 @@ a {
  width: 100px;
  height: 100px;
  color: white;
- background-image: url('../img/icon.jpg');
+ background-image: url('../img/icon.png');
  background-size: contain;
  -webkit-transition: All 0.5s ease;
   -moz-transition: All 0.5s ease;
@@ -123,7 +123,7 @@ a {
 }
 
 .chips-menu-element:hover .icon{
-  background-image: url('../img/icon-orange.jpg');
+  background-image: url('../img/icon-orange.png');
   -webkit-transition: All 0.5s ease;
   -moz-transition: All 0.5s ease;
   -o-transition: All 0.5s ease;
@@ -239,3 +239,6 @@ footer {
   display: flex;
 }
 
+@media only screen and (max-width: 768px) {
+  
+}
