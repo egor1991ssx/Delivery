@@ -143,3 +143,24 @@ $('a[href*="#"]').click(function() {
     }, 400);
     return false;
 });
+
+function auth() {
+  alert(`Проводится проверка...`);
+  document.getElementById(`enter-form`).remove();
+}
+
+function showEnterForm() {
+  const enterForm = document.createElement(`form`);
+  enterForm.id = `enter-form`;
+  enterForm.innerHTML = `<input type="Text">
+  <br/>
+  Пароль: <input type="password">
+  <br/>
+  <button id="submit">Войти</button>`;
+  document.getElementsByTagName(`body`)[0].appendChild(enterForm);
+  document.getElementById(`submit`).addEventListener(`click`, auth);
+}
+
+document.addEventListener(`DOMContentLoader`, () => {
+  document.getElementById(`enter-btn`).addEventListener(`click`, showEnterForm);
+});
