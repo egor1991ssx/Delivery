@@ -137,9 +137,11 @@ setTimeout(function () {
 
 var $page = $("html, body");
 $('a[data-href*="#"]').click(function () {
+  const menu = $(`#menu`)[0];
+  const menuHeight = menu.offsetHeight;
   $page.animate(
     {
-      scrollTop: $($.attr(this, "data-href")).offset().top - 200,
+      scrollTop: $($.attr(this, "data-href")).offset().top - menuHeight - 120,
     },
     400
   );

@@ -186,6 +186,7 @@ a {
 .menu-element:hover {
   background-color: orange;
   color: black;
+  cursor: pointer;
 }
 
 .chips-wrapper {
