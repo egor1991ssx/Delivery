@@ -95,7 +95,6 @@ let sushiElement = document.getElementById("sushi");
 
 renderProducts(sushiElement, sushi);
 
-
 let wok = [
   new Product("Ролл1", "Афигенный сет", "set1.jpg", 400),
   new Product("Ролл2", "Вкусный сет", "set2.jpg", 500),
@@ -132,16 +131,19 @@ let drinkElement = document.getElementById("drink");
 
 renderProducts(drinkElement, drink);
 
-setTimeout(function(){
-	document.body.classList.add('body_visible');
+setTimeout(function () {
+  document.body.classList.add("body_visible");
 }, 200);
 
-var $page = $('html, body');
-$('a[href*="#"]').click(function() {
-    $page.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top-200
-    }, 400);
-    return false;
+var $page = $("html, body");
+$('a[data-href*="#"]').click(function () {
+  $page.animate(
+    {
+      scrollTop: $($.attr(this, "data-href")).offset().top - 200,
+    },
+    400
+  );
+  return false;
 });
 
 function auth() {
