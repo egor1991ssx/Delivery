@@ -1,6 +1,7 @@
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: black;
+  margin: 0;
 }
 
 .body_hide {
@@ -15,7 +16,6 @@ body {
 .top-link-wrapper {
   background-color: orange;
   font-size: 20px;
-  border-radius: 20px;
   padding: 5px 10% 5px 5%;
   margin: 0 0 10px 0;
   justify-content: space-between;
@@ -32,6 +32,8 @@ body {
   display: inline-block;
   padding: 5px 8px;
   border-radius: 5px;
+  background-color: black;
+  color: white;
   -webkit-transition: All 0.5s ease;
   -moz-transition: All 0.5s ease;
   -o-transition: All 0.5s ease;
@@ -40,7 +42,7 @@ body {
 }
 
 .button:hover {
-  background-color: rgb(38, 220, 233);
+  background-color: green;
   color: white;
 }
 
@@ -56,6 +58,8 @@ body {
   -o-transition: All 0.5s ease;
   -ms-transition: All 0.5s ease;
   transition: All 0.5s ease;
+  text-align: center;
+  align-items: center;
 }
 
 .button-registration:hover {
@@ -109,6 +113,14 @@ a {
 .photo {
   width: 450px;
   margin-bottom: 10px;
+}
+
+.logo {
+  width: 400px;
+  height: 200px;
+  color: white;
+  background-image: url("../img/logo-black.png");
+  background-size: contain;
 }
 
 .icon {
@@ -166,7 +178,6 @@ a {
   font-size: 25px;
   top: 0px;
   border: 5px orange solid;
-  border-radius: 10px;
   z-index: 16;
 }
 
@@ -191,7 +202,6 @@ a {
 
 .chips-wrapper {
   background-color: orange;
-  border-radius: 20px;
   padding-top: 10px;
   margin-top: 10px;
 }
@@ -224,21 +234,42 @@ a {
   background-color: orange;
 }
 
-footer {
+.inf-low {
+  color: grey;
+  font-size: 15px;
+  margin-top: 5px;
+  width: 500px;
+}
+
+.footer-top {
   background-color: orange;
   font-size: 20px;
-  border-radius: 20px;
   padding: 5px 5%;
-  margin: 50px 0 10px 0;
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer-down {
+  background-color: orange;
+  font-size: 20px;
+  padding: 5px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: grey 1px solid;
 }
 
 .oplata-wrapper {
   align-items: center;
   justify-content: center;
   display: flex;
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: black;
+  color: white;
 }
 
 .information {
