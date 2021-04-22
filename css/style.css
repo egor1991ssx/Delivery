@@ -27,6 +27,58 @@ body {
   display: flex;
 }
 
+.help-wrapper {
+  background-color: orange;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-evenly
+}
+
+.help {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin: 5px;
+  border: 10px rgb(0, 0, 0) solid;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+.help:hover {
+  color: white;
+  font-size: 20px;
+  margin: 5px;
+  border: 10px rgb(0, 0, 0) solid;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   box-shadow:
+    1px 1px rgb(0, 0, 0),
+    2px 2px rgb(0, 0, 0),
+    3px 3px rgb(0, 0, 0),
+    4px 4px rgb(0, 0, 0),
+    5px 5px rgb(0, 0, 0),
+    6px 6px rgb(0, 0, 0),
+    7px 7px rgb(0, 0, 0);
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
+}
+
 .button {
   border: 1px black solid;
   display: inline-block;
@@ -53,16 +105,40 @@ body {
   display: inline-block;
   padding: 5px 8px;
   border-radius: 5px;
+  margin-top: 5px;
+  display: flex;
+  text-align: center;
+  align-items: center;
   -webkit-transition: All 0.5s ease;
   -moz-transition: All 0.5s ease;
   -o-transition: All 0.5s ease;
   -ms-transition: All 0.5s ease;
   transition: All 0.5s ease;
-  text-align: center;
-  align-items: center;
 }
 
 .button-registration:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.button-soc {
+  border: 1px black solid;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 5px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+  align-items: center;
+  display: flex;
+}
+
+.button-soc:hover {
   background-color: green;
   color: white;
 }
@@ -87,6 +163,7 @@ body {
 .order-btn:hover {
   background-color: orange;
   color: black;
+  cursor: pointer;
 }
 
 a {
@@ -143,6 +220,16 @@ a {
   -o-transition: All 0.5s ease;
   -ms-transition: All 0.5s ease;
   transition: All 0.5s ease;
+}
+
+.eat-inf {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  background-color: black;
 }
 
 .eat-set {
@@ -203,7 +290,8 @@ a {
 .chips-wrapper {
   background-color: orange;
   padding-top: 10px;
-  margin-top: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .chips {
@@ -279,6 +367,11 @@ a {
   color: white;
   padding: 10px;
 }
+
+.name-product {
+  font-size: 30px;
+}
+
 
 @media only screen and (max-width: 768px) {
 }
