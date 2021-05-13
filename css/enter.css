@@ -124,3 +124,9 @@ a {
   background-color: green;
   color: white;
 }
+
+.policy-inf {
+  font-size: 1vw;
+  justify-content: center;
+  margin: 20px;
+}

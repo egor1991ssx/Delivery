@@ -16,13 +16,12 @@ body {
 }
 
 .top-link-wrapper {
-  background: linear-gradient(45deg, #ee6201, #914d1c);
-  font-size: 20px;
+  background-color: #ee6201;
+  font-size: 1.1vw;
   padding: 5px 10% 5px 5%;
   justify-content: space-between;
   display: flex;
 }
-
 
 .top-link-registration {
   align-items: center;
@@ -34,7 +33,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
-  font-size: 25px;
+  font-size: 1.1vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -43,7 +42,7 @@ body {
 .help {
   width: 30%;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 1vw;
   margin: 5px;
   border: 10px rgb(0, 0, 0) solid;
   border-radius: 10px;
@@ -61,7 +60,7 @@ body {
 
 .help:hover {
   color: white;
-  font-size: 20px;
+  font-size: 1.1vw;
   margin: 5px;
   border: 10px rgb(0, 0, 0) solid;
   border-radius: 10px;
@@ -111,26 +110,18 @@ body {
   -o-transition: All 0.5s ease;
   -ms-transition: All 0.5s ease;
   transition: All 0.5s ease;
-  box-shadow:
-  1px 0px black, 1px 1px black,
-  2px 1px black, 2px 2px black,
-  3px 2px black, 3px 3px black,
-  4px 3px black, 4px 4px black,
-  5px 4px black, 5px 5px black,
-  6px 5px black, 6px 6px black;
+  box-shadow: 1px 0px black, 1px 1px black, 2px 1px black, 2px 2px black,
+    3px 2px black, 3px 3px black, 4px 3px black, 4px 4px black, 5px 4px black,
+    5px 5px black, 6px 5px black, 6px 6px black;
 }
 
 .button-registration:hover {
   background-color: green;
   color: white;
   cursor: pointer;
-  box-shadow:
-  1px 0px green, 1px 1px green,
-  2px 1px green, 2px 2px green,
-  3px 2px green, 3px 3px green,
-  4px 3px green, 4px 4px green,
-  5px 4px green, 5px 5px green,
-  6px 5px green, 6px 6px green;
+  box-shadow: 1px 0px green, 1px 1px green, 2px 1px green, 2px 2px green,
+    3px 2px green, 3px 3px green, 4px 3px green, 4px 4px green, 5px 4px green,
+    5px 5px green, 6px 5px green, 6px 6px green;
 }
 
 .button-soc {
@@ -168,7 +159,7 @@ body {
   color: white;
   background-color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 20pt;
+  font-size: 1.25vw;
 }
 
 .order-btn:hover {
@@ -191,14 +182,14 @@ a {
 .h2-name {
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 2.5vw;
   text-shadow: 0 0 20px black;
 }
 
 .h2-name-wrapper-1 {
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 2.5vw;
   background-color: black;
   border-top: 5px #ee6201 solid;
   border-bottom: 5px #ee6201 solid;
@@ -210,7 +201,7 @@ a {
 .h2-name-wrapper {
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 2.5vw;
   background-color: black;
   border-top: 5px #ee6201 solid;
   border-bottom: 5px #ee6201 solid;
@@ -260,7 +251,7 @@ a {
 
 .eat-inf {
   color: white;
-  font-size: 20px;
+  font-size: 1.1vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -270,7 +261,7 @@ a {
 
 .eat-set {
   color: white;
-  font-size: 20px;
+  font-size: 1.1vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -298,7 +289,7 @@ a {
   background-color: black;
   text-align: center;
   position: sticky;
-  font-size: 25px;
+  font-size: 1.3vw;
   top: 0px;
   border-top: 5px #ee6201 solid;
   border-bottom: 5px #ee6201 solid;
@@ -338,7 +329,7 @@ a {
 
 .chips-menu-element {
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 1.1vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -347,21 +338,11 @@ a {
   border-radius: 10px;
   padding: 10px;
   background-color: rgb(0, 0, 0);
-  -webkit-transition: All 0.5s ease;
-  -moz-transition: All 0.5s ease;
-  -o-transition: All 0.5s ease;
-  -ms-transition: All 0.5s ease;
-  transition: All 0.5s ease;
-}
-
-.chips-menu-element:hover {
-  color: rgb(0, 0, 0);
-  background-color: #ee6201;
 }
 
 .inf-low {
   color: white;
-  font-size: 15px;
+  font-size: 0.8vw;
   margin-top: 5px;
   width: auto;
 }
@@ -369,21 +350,22 @@ a {
 .inf-low-name {
   color: white;
   margin-top: 5px;
-  font-size: 25px;
+  font-size: 1.25vw;
 }
 
 .footer {
-display: inline;
-justify-content: center;
+  display: inline;
+  justify-content: center;
 }
 
 .footer-wrapper {
   display: table-column;
+  margin: 0 20px;
 }
 
 .footer-top {
   background-color: #ee6201;
-  font-size: 20px;
+  font-size: 1.1vw;
   padding: 5px 5%;
   margin: 50px 0 0 0;
   display: flex;
@@ -393,36 +375,36 @@ justify-content: center;
 
 .footer-center {
   background-color: #ee6201;
-  font-size: 20px;
+  font-size: 1.1vw;
   padding: 5px 50px 20px 50px;
   display: flex;
   border-top: grey 1px solid;
   flex-wrap: wrap;
-   flex-direction:row;
-   justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .footer-wrapper-left {
-display: flex;
-justify-content: left;
-display: table-column;
+  display: flex;
+  justify-content: left;
+  display: table-column;
 }
 
 .footer-wrapper-center {
-display: flex;
-justify-content: center;
-display: table-column;
+  display: flex;
+  justify-content: center;
+  display: table-column;
 }
 
 .footer-wrapper-right {
-display: flex;
-float: right;
-display: table-column;
+  display: flex;
+  float: right;
+  display: table-column;
 }
 
 .footer-down {
   background-color: #ee6201;
-  font-size: 20px;
+  font-size: 1.1vw;
   padding: 5px 0 20px 0px;
   display: flex;
   align-items: center;
@@ -447,17 +429,13 @@ display: table-column;
   color: white;
   padding: 10px;
   margin-bottom: 10px;
-   box-shadow:
-  -1px 0px black, -1px 1px black,
-  -2px 1px black, -2px 2px black,
-  -3px 2px black, -3px 3px black,
-  -4px 3px black, -4px 4px black,
-  -5px 4px black, -5px 5px black,
-  -6px 5px black, -6px 6px black;
+  box-shadow: -1px 0px black, -1px 1px black, -2px 1px black, -2px 2px black,
+    -3px 2px black, -3px 3px black, -4px 3px black, -4px 4px black,
+    -5px 4px black, -5px 5px black, -6px 5px black, -6px 6px black;
 }
 
 .name-product {
-  font-size: 30px;
+  font-size: 1.5vw;
 }
 
 .black-backgroud-chips-help {
@@ -476,6 +454,10 @@ display: table-column;
 
 .panel {
   padding-bottom: 5px;
+}
+
+.img-oplata {
+  width: 20%;
 }
 
 @media only screen and (max-width: 768px) {
