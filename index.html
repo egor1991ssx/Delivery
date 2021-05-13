@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/slider.css" />
-    <title>Good Food</title>
+    <title>FoodGood</title>
+    <link rel="shortcut icon" href="./img/logi-int.png" type="image/x-icon">
   </head>
   <body class="body_hide">
     <!-- Верхняя ссылка -->
     <div class="top-link-wrapper" id="top">
       <div>
         <div class="information">
-          <div>Телефон службы поддержки: +7(910)628-90-65</div>
-          <div>Время доставки в будни: 9:00-23:00</div>
-          <div>Время доставки в выходные: 9:00-00:00</div>
+          <div class="button-registration-tel">Время доставки пн-пт: 9:00-23:00</div>
+          <div class="button-registration-tel">Время доставки сб-вс: 9:00-00:00</div>
+          <div class="button-registration-tel">Телефон службы поддержки: +7(910)628-90-65</div>
         </div>
         <div class="information">
           <div>Мы в социальных сетях:</div>
@@ -31,26 +32,28 @@
         </div>
       </div>
       <div><img class="logo" /></div>
-      <div>
-        <div>
+      <div class="panel-wrapper">
+        <div class="panel">
           <a href="enter.html" class="button-registration" id="enter-btn"
             >Вход&nbsp;<img src="./img/vhod.png"
           /></a>
-          <a href="registration.html" class="button-registration"
+        </div>
+          <div class="panel">
+            <a href="registration.html" class="button-registration"
             >Регистрация&nbsp;<img src="./img/reg.png"
           /></a>
-        </div>
-        <div>
+          </div>
+        <div class="panel">
           <a href="pionts.html" class="button-registration"
             >Ваши текущие заказы (0)&nbsp;<img src="./img/clock.png"
           /></a>
         </div>
-        <div>
+        <div class="panel">
           <a href="pionts.html" class="button-registration"
             >Зачем нужны баллы?&nbsp;<img src="./img/piont.png"
           /></a>
         </div>
-        <div>
+        <div class="panel">
           <a data-href="#delivery" class="button-registration"
             >Как оформить заказ?&nbsp;<img src="./img/ride.png"
           /></a>
@@ -72,7 +75,7 @@
       <a class="menu-element" data-href="#drink">Напитки</a>
     </div>
     <!-- Слайдер -->
-    <div class="slider">
+    <div class="slider" id="slider">
       <div class="slider__wrapper">
         <div class="slider__items">
           <div class="slider__item">
@@ -101,7 +104,7 @@
       ></a>
     </div>
     <!-- Фишки -->
-    <div class="chips-wrapper">
+    <div class="chips-wrapper" id="chips">
       <h2 class="h2-name">ЧТО ЕСТЬ У НАС И ЧЕГО НЕТ У ОСТАЛЬНЫХ:</h2>
       <div class="chips">
         <div class="chips-menu-element">
@@ -187,12 +190,13 @@
     <h2 class="h2-name-wrapper" name="drink">Напитки</h2>
     <div class="eat-menu-set" id="drink"></div>
     <!-- Нижняя штука -->
+    <div class="footer">
     <footer class="footer-top">
       <div class="footer-wrapper">
         <a href="https://vk.com/egrsafronov" class="button"
           >Политика конфиденциальности</a
         >
-        <a href="https://vk.com/egrsafronov" class="button">FAQ</a>
+        <a href="FAQ.html" class="button">FAQ</a>
       </div>
       <div class="oplata-wrapper">
         Мы принимаем:&nbsp;&nbsp;&nbsp;
@@ -202,18 +206,31 @@
         <img src="./img/visa.png" />
       </div>
     </footer>
-    <footer class="footer-down">
-      <div class="footer-wrapper">
-        <div class="inf-low">©FoodGood, 2021</div>
-        <div class="inf-low">v1.0</div>
+    <footer class="footer-center">
+      <div class="footer-wrapper-left">
+        <div class="inf-low-name">Информация</div>
+        <a data-href="#chips" class="inf-low">О нас</a>
+        <a href="delivery" class="inf-low">Оплата и доставка</a>
+        <a href="help" class="inf-low">Связаться с нами</a>
       </div>
-      <div class="inf-low">
-        App Store является знаком обслуживания компании Apple Inc. Google Play и
-        логотип Google Play являются товарными знаками корпорации Google LLC.
-        HUAWEI и логотип HUAWEI являются товарными знаками компании Huawei
-        Technologies Co., Ltd.
+      <div class="footer-wrapper-center">
+        <div class="inf-low-name">Навигация</div>
+        <a data-href="#slider" class="inf-low">Скидки и акции</a>
+        <a href="enter.html" class="inf-low">Личный кабинет</a>
+        <a href="enter.html" class="inf-low">История заказов</a>
       </div>
+            <div class="footer-wrapper-right">
+              <div class="inf-low-name">Социальные сети</div>
+              <a href="https://vk.com/egrsafronov" class="inf-low">ВКонтакте</a>
+              <a href="https://vk.com/egrsafronov" class="inf-low">Инстаграм</a>
+            </div>
     </footer>
+<footer class="footer-down">
+    <div class="footer-wrapper">
+      <div class="inf-low">©FoodGood, 2021, v1.0</div>
+    </div>
+</footer>
+</div>
     <script
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"

@@ -4,16 +4,31 @@ body {
   color: white;
   display: flex;
   justify-content: center;
+  background-image: url(../img/logo-45-deg.png);
+  background-size: 150px;
 }
 
 * {
   box-sizing: border-box;
 }
 
+.logo {
+  width: 400px;
+  height: 200px;
+  background-image: url("../img/logo-black.png");
+  background-size: contain;
+}
+
+.right-logo {
+  display: flex;
+  justify-content: center;
+}
+
 /* Add padding to containers */
 .enter-form {
   padding: 16px;
-  border: 10px orange solid;
+  border: 10px #ee6201 solid;
+  background-color: black;
 }
 
 /* Full-width input fields */
@@ -25,7 +40,7 @@ input[type="password"] {
   display: inline-block;
   border: none;
   background: #f1f1f1;
-  border: 2px orange solid;
+  border: 2px #ee6201 solid;
 }
 
 input[type="text"]:focus,
@@ -42,7 +57,7 @@ hr {
 
 /* Set a style for the submit button */
 .registerbtn {
-  background-color: orange;
+  background-color: #ee6201;
   color: white;
   padding: 16px 20px;
   margin: 8px 0;
@@ -77,7 +92,7 @@ a {
 }
 
 .button {
-  border: 1px orange solid;
+  border: 1px #ee6201 solid;
   display: inline-block;
   padding: 5px 8px;
   border-radius: 5px;
@@ -89,7 +104,7 @@ a {
 }
 
 .button:hover {
-  background-color: orange;
+  background-color: #ee6201;
   color: black;
 }
 
